@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="style.css">
+
+    <title>Programming Hero</title>
+  </head>
+  <body>
+   
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="data:image/png;base64,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" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">My Classes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEKSURBVHgBvVQLEcIwDE05BAwFVAI4KBJwMAk4GBJwAA52KNgcAAo2B8xBSdnrXdnRH3C8u1y39eUlS9MQBaC1Vmw1Wwdr2ErKBTtJOFvcYRZGXKaKFXDQEFWTQKcsUSZVcDgEOHsbMKZHTr2KCK+B6NL9PpuQFC+SrRVCDBTGGevWK8iwWd0ojuvEJygYy84Ln2AKeqz+GtJYP5ccgv2LhZfhnFxSprbhY4SOEoFrqd3mnzmbJY01bCkdtnXUu2gdoklKz7Bw7vnTb46NI40HYgpd8TtlYICvqf9a4ABM3XJaxoeNsKn/QpCva09/BebfhW2F51p/MrEdQaVfp7b+ShCiJbI0bbWL8R8GrCiiPEf3vgAAAABJRU5ErkJggg==" alt="">
+                </a>
+              </li>
+
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAWCAYAAAArdgcFAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEXSURBVHgB1ZRvEYJAEMXfMQawgUQwAg00giaQBtpAG0AEG6AJxATSAE1w7o7LuKLAMnNf/M3s8O/d8njcnfPexwBWeFM6544IATXP/Sc11RQBiKjYZUlVyT1uPEdoyPFN3B8QGm7qw3Dhfxm1+pcIA8eauZZzzruWy5zqjPFspHn19YReUMinZRgJR6H+W/ZL0OReYyQ0Zqtyj38JEiUwT8lB1yKa+tdCYlIYGXSthIWIChgwuVbitMndG7aCLteTDv1Jjtw4owF39JPIMadNr4LBTe3HE+sek57+a6oF7FxNrv8Xym4jmd+Ms6WQzPcwiDXpgHbZ0s+aZ1HHmJM6H5qGepuuqB69allxO6oEBkg3F32s7z8B27G4s+cPjwYAAAAASUVORK5CYII=">
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <img class="anik" src="https://web.programming-hero.com/static/media/profileImage.934e5b10.png">
+                </a>
+              </li>
+              
+              
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col-7">
+              <br>
+              <br>
+              <br>
+            <h1 class="text-white">
+                Complete Web Development Course with Jhankar Mahbub
+            </h1>
+            <br>
+            <p class="text-white">Complete Web Development Course with Jhankar Mahbub
+                একদম জিরো থেকে, কোন প্রকার পূর্ব অভিজ্ঞতা ছাড়াই একজন প্রফেশনাল ওয়েব ডেভেলপার হওয়ার জন্য যা যা লাগবে তার সবকিছুই সহজ করে গিলিয়ে খাওয়ানো হবে এই কোর্সে।</p>
+
+                <br>
+          </div>
+          <div class="col-5">
+            
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://web.programming-hero.com/public/1622955835022.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://web.programming-hero.com/public/1622956144372.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://web.programming-hero.com/public/1622956286239.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+
+
+
+          </div>
+          
+        </div>
+      </div>
+
+      <h1 class="text-white text-center"><b>Course Contents:</b></h1>
+
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Module 0: Welcome Video
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+               
+            <a href="https://drive.google.com/file/d/1Ln7Qn0YrTOCBL9itmQDzgSQTW3M9uSd4/view?usp=sharing"> Click here to watch the video</a>
+            
+            </div>
+          </div>
+        </div>
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <a>Module 1: Basic HTML (Part 01)</a>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <a href="https://drive.google.com/file/d/1hOJ2VJq6xTPcDpuFhg63IYwKaXl2-Q23/view?usp=sharing">Click Here to watch the video</a>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
